@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: none;
+}
+.left_bar{
+    width: 20%;
+    height: 100vh;
+    inset: 1;
+    background-color: rgb(2, 2, 61);
+    display: flex;
+    flex-direction: column;
+}
+.left_bar h1{
+    color: white;
+    font-size: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+.contents,.content{
+    margin-top: 60px;
+    color: white;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contents div,.content div{
+    margin-right: 50px;
+    background-color: white;
+    color: rgb(44, 43, 43);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.right_bar{
+    position: relative;
+    width: 80%;
+    background-color: white;
+    padding: 10px 10px;
+}
+.top_content{
+    width: 100%;
+    position: relative;
+}
+.input_bar{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+}
+.input_bar input{
+    margin: 10px;
+    padding: 10px 20px;
+    outline: none;
+}
+.top_content button{
+    margin-left: 30px;
+    padding: 10px 20px;
+    background-color: rgb(2, 2, 61);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    font-size: 15px;
+}
+.time_content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    margin-top: 20px;
+    width: 15%;
+    margin-right: 40px;
+}
+.date,.time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#seconds{
+    font-size: 15px;
+}
+.table_content{
+   width: 95%;
+   overflow: auto;
+   padding: 10px;
+   background-color:  rgb(2, 2, 61);
+   margin-top: 20px;
+   margin-left: 30px;
+   border-radius: 10px;
+   height: 65vh;
+}
+.table_content::-webkit-scrollbar{
+    width: 5px;
+    border-radius: 10px;
+    background-color: gray;
+}
+.table_content::-webkit-scrollbar-thumb{
+    background-color:  rgb(2, 2, 61);
+    border-radius: 10px;
+}
+
+table{
+    width: 100%;
+    background-color:  rgb(2, 2, 61);
+}
+table thead th{
+    background-color: white;
+}
+table thead th:nth-child(1){
+    width: 65%;
+    text-align: center;
+}
+table thead th{
+    padding: 10px;
+}
+table tbody tr td:nth-child(2){
+    text-align: center;
+}
+table tbody tr td:nth-child(3){
+    text-align: center;
+}
+table tbody tr td:nth-child(4){
+    text-align: center;
+}
+table tbody tr td button{
+    padding: 2px;
+    color: white;
+    cursor: pointer;
+    background-color:  rgb(2, 2, 61);
+}
+table tbody tr{
+    background-color: white;
+}
+table tbody tr td{
+    padding: 10px;
+}
+input{
+    background-color: #fff;
+}
+.message{
+    position: absolute;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    left: 40%;
+    z-index: 1;
+    background-color: lightgreen;
+    color: white;
+    display: none;
+}
+.message.active{
+    display: block;
+}
+.dmessage{
+    position: absolute;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    left: 40%;
+    z-index: 1;
+    background-color: rgb(253, 108, 108);
+    color: white;
+    display: none;    
+}
+.dmessage.active{
+    display: block;
+}

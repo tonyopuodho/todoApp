@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left_bar">
+            <h1>Todo App</h1>
+            <div class="contents">
+                <h3>Availabe Tasks</h3>
+                <div>
+                    <span id="available_task">0</span>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Completed Tasks</h3>
+                <div>
+                    <span id="completed_task">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="right_bar">
+            <div class="message"> <h3 id="message"></h3></div>
+            <div class="dmessage"> <h3 id="dmessage"></h3></div>
+            <div class="top_content">
+                <div class="input_bar">
+                    <input type="text" placeholder="Enter task" id="task" required>
+                    <input type="date" id="date" required>
+                </div>
+                <button id="add-btn">Add task</button>
+                <div class="time_content">
+                    <div class="date">
+                        <h3>Date</h3>
+                        <div><span id="day">0</span>/ <span id="month">0</span>/<span id="year">0000</span></div>
+                    </div>
+                    <div class="time">
+                        <h3>Time</h3>
+                        <div><span id="hours"> </span> : <span id="minutes">  </span> <span id="seconds"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="table_content">
+                <table>
+                    <thead>
+                        <th>Tasks</th>
+                        <th>Date</th>
+                        <th>Completed</th>
+                        <th>Action</th>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="api.js"></script>
+</body>
+</html>
